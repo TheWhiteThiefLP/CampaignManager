@@ -17,9 +17,9 @@ As copyright can be quite annoying I will not be adding any content to this outr
 
 Here is a "roadmap" of what is to come and in what steps I will be working on these. I will not make any promises in regards to release dates.
 ### Phase 1: Core Entity & Data Management (Current)
-* [ ] Structured JSON data modeling for campaign assets (Items, NPCs, Spells, Monsters).
+* [x] Structured JSON data modeling for campaign assets (Items, NPCs, Spells, Monsters).
 * [ ] Local file-system organization (`data/item/`, `data/npc/`, etc.).
-* [ ] Main Menu window for swapping between campaigns
+* [x] Main Menu window for swapping between campaigns
  
 ### Phase 2: Interactive Desktop UI & Workspace
 * [ ] **Dockable Tool Panels:** Freely movable, snap-in, or tear-away floating windows for quick-reference sheets, session notes, and entity inspectors.
