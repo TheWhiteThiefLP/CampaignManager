@@ -10,12 +10,6 @@
 
 MainMenuPage::MainMenuPage(QWidget *parent) : QWidget(parent) {
     ui.setupUi(this);
-
-    connect(ui.settingsBtn, &QPushButton::clicked, this, [this] {
-        SettingsDialog dlg(this);
-        if (dlg.exec() == QDialog::Accepted)
-            refresh();
-    });
     ui.campaignList->setContextMenuPolicy(Qt::CustomContextMenu);
 
     connect(ui.newCampaignBtn, &QPushButton::clicked, this, &MainMenuPage::onNewCampaign);

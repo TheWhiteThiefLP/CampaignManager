@@ -1,8 +1,7 @@
-// MainWindow.h
 #pragma once
 #include <QMainWindow>
+#include "ui_MainWindow.h"
 
-class QStackedWidget;
 class MainMenuPage;
 class CampaignPage;
 
@@ -12,7 +11,10 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
 
 private:
-    QStackedWidget *m_stack;
-    MainMenuPage *m_menu;
-    CampaignPage *m_campaign;
+    void openCampaign(const QString &name);
+    void showMainMenu();
+
+    Ui::MainWindow ui;
+    MainMenuPage *m_menu = nullptr;
+    CampaignPage *m_campaign = nullptr;
 };

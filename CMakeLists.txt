@@ -12,15 +12,13 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-add_executable(DnD_Manager
-        main.cpp
-        src/MainWindow.cpp              src/MainWindow.h
-        src/pages/MainMenuPage.cpp      src/pages/MainMenuPage.h      src/ui/QTMainMenu.ui
-        src/pages/CampaignPage.cpp      src/pages/CampaignPage.h
-        src/dialogs/SettingsDialog.cpp  src/dialogs/SettingsDialog.h  src/ui/SettingsDialog.ui
-        src/core/CampaignStore.cpp      src/core/CampaignStore.h
-        src/core/Settings.cpp           src/core/Settings.h
+file(GLOB_RECURSE SOURCES
+        src/*.cpp
+        src/*.h
+        src/*.ui
 )
+
+add_executable(DnD_Manager main.cpp ${SOURCES})
 
 target_include_directories(DnD_Manager PRIVATE
         src
