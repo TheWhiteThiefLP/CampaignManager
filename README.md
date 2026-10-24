@@ -6,7 +6,7 @@ A local desktop campaign management application built for Dungeon Masters who pr
 
 * **Core Language:** **C++ (C++23)** — Chosen as its the language I have the most experience with and am most comfortable with
 * **Build System & IDE:** **CMake & CLion** 
-* **Data Serialization:** **`nlohmann/json`** — The data for each campaign is stored and linked using JSON as it was the first thing that came to mind 
+* **Data Serialization:** **custom Markdown Parser** — The data for each campaign is stored and linked using Markdown with Frontmatter this was swapped from JSON to make the Campaign structure readable in Obsidian. 
 * **Graphical User Interface (GUI):** **Qt 6 (Widgets & QGraphicsView)**
 ---
 
@@ -17,8 +17,8 @@ As copyright can be quite annoying I will not be adding any content to this outr
 
 Here is a "roadmap" of what is to come and in what steps I will be working on these. I will not make any promises in regards to release dates.
 ### Phase 1: Core Entity & Data Management (Current)
-* [x] Structured JSON data modeling for campaign assets (Items, NPCs, Spells, Monsters).
-* [ ] Local file-system organization (`data/item/`, `data/npc/`, etc.).
+* [x] Structured ~~JSON data~~ Markdown modeling for campaign assets (Items, NPCs, Spells, Monsters).
+* [x] Local file-system organization (`item/`, `npc/`, etc.).
 * [x] Main Menu window for swapping between campaigns
 * [ ] General UI for navigating
  
