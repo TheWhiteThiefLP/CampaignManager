@@ -2,10 +2,10 @@
 #include <QWidget>
 #include "ui_CampaignSelect.h"
 
-class MainMenuPage : public QWidget {
+class CampaignSelectPage : public QWidget {
     Q_OBJECT
 public:
-    explicit MainMenuPage(QWidget *parent = nullptr);
+    explicit CampaignSelectPage(QWidget *parent = nullptr);
 
     signals:
         void campaignOpened(const QString &name);

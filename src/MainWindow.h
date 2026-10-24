@@ -2,7 +2,7 @@
 #include <QMainWindow>
 #include "ui_MainWindow.h"
 
-class MainMenuPage;
+class CampaignSelectPage;
 class CampaignPage;
 
 class MainWindow : public QMainWindow {
@@ -13,8 +13,9 @@ public:
 private:
     void openCampaign(const QString &name);
     void showMainMenu();
+    void updateMenus(); 
 
     Ui::MainWindow ui;
-    MainMenuPage *m_menu = nullptr;
+    CampaignSelectPage *m_menu = nullptr;
     CampaignPage *m_campaign = nullptr;
 };

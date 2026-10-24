@@ -18,7 +18,13 @@ file(GLOB_RECURSE SOURCES
         src/*.ui
 )
 
-add_executable(DnD_Manager main.cpp ${SOURCES})
+add_executable(DnD_Manager main.cpp ${SOURCES}
+        src/pages/TabManager.cpp
+        src/pages/TabManager.h
+        src/core/MarkdownParser.cpp
+        src/core/MarkdownParser.h
+        src/pages/NPCEditor.cpp
+        src/pages/NPCEditor.h)
 
 target_include_directories(DnD_Manager PRIVATE
         src
