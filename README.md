@@ -12,7 +12,7 @@ A local desktop campaign management application built for Dungeon Masters who pr
 
 ## Vision & Roadmap: What This Will Eventually Become
 
-This project will hopefully evenually become a full standalone software that allows you to add homebrew content easily.
+This project will hopefully eventually become a full standalone software that allows you to add homebrew content easily.
 As copyright can be quite annoying I will not be adding any content to this outright and you will most likely have to create classes and items yourself.
 
 Here is a "roadmap" of what is to come and in what steps I will be working on these. I will not make any promises in regards to release dates.
