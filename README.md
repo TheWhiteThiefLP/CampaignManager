@@ -20,6 +20,7 @@ Here is a "roadmap" of what is to come and in what steps I will be working on th
 * [x] Structured JSON data modeling for campaign assets (Items, NPCs, Spells, Monsters).
 * [ ] Local file-system organization (`data/item/`, `data/npc/`, etc.).
 * [x] Main Menu window for swapping between campaigns
+* [ ] General UI for navigating
  
 ### Phase 2: Interactive Desktop UI & Workspace
 * [ ] **Dockable Tool Panels:** Freely movable, snap-in, or tear-away floating windows for quick-reference sheets, session notes, and entity inspectors.
